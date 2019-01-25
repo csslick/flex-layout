@@ -82,27 +82,45 @@ header, section, footer{
   flex: 1;
   /* border: 1px solid red; */
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
+}
+#content .counsel-menu ul li:first-child{
+  background: url(../images/call_help.png);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: right 40px;
+  text-align: left;
+
 }
 #content .counsel-menu ul li:first-child b{
-  font-size: 2em;
-  color: #69c326
+  font-size: 2.4em;
+  color: green;
 }
 #content .counsel-menu ul i{
   font-size: 3.2em;
   color: #444;
 }
 #content .counsel-menu li h3{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 /* 소개, 매장찾기(2칼럼) */
 #content .about{
   display: flex;
+  margin-top: 60px;
 }
 #content .about .col2{
-  flex: 1;
+  /* flex: 1; */
+  width: calc(50% - 10px);
   border: 1px solid red;
+  overflow: hidden;
+}
+#content .about .col2:first-child{
+  margin-right: 20px;
+}
+#content .about h2{ 
+  color: green;
+  margin-bottom: 10px;
 }
 #content .about .col2 > img{
   display: block;
@@ -110,4 +128,18 @@ header, section, footer{
 #content .about .col2 > div{
   padding: 20px;
   background: #efefef;
+}
+#content .about .col2 > div > p{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* why 풀 배경 배너 섹션 */
+#content .why{
+  height: 600px;
+  background: #ccc;
+  background: url('../images/why_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 60px;
 }
