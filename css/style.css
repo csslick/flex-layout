@@ -1,0 +1,113 @@
+/* style.css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 100%;
+  color: #444;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+header, section, footer{
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+#main_header{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+#main_header h1{
+  position: relative;
+  left: 30px;
+  top: 25px;
+}
+#user-nav{
+  position: absolute;
+  top: 10px;
+  right: 20px;  
+}
+#user-nav li{
+  display: inline-block;
+}
+#user-nav li a{
+  display: block;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+#gnb{
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  /* border: 1px solid red; */
+}
+#gnb li{
+  float: left;
+}
+#gnb li a{
+  padding: 0 40px;
+  color: #444;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#gnb li:last-child a{
+  padding-right: 10px;
+}
+
+#content .main-visual{
+  width: auto;
+  height: 600px;
+  background: url('http://placeimg.com/1200/500/bg');
+  background-size: cover;
+}
+
+/* 창업문의 - 4칼럼 */
+#content .counsel-menu ul{
+  display: flex;
+}
+#content .counsel-menu ul li{
+  flex: 1;
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 20px;
+}
+#content .counsel-menu ul li:first-child b{
+  font-size: 2em;
+  color: #69c326
+}
+#content .counsel-menu ul i{
+  font-size: 3.2em;
+  color: #444;
+}
+#content .counsel-menu li h3{
+  margin-top: 10px;
+}
+
+/* 소개, 매장찾기(2칼럼) */
+#content .about{
+  display: flex;
+}
+#content .about .col2{
+  flex: 1;
+  border: 1px solid red;
+}
+#content .about .col2 > img{
+  display: block;
+}
+#content .about .col2 > div{
+  padding: 20px;
+  background: #efefef;
+}

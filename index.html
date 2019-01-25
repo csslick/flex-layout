@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flex layout-ex</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id='main_header'>
+    <h1><a href="#"><img src="./images/h_logo.gif" alt="logo"></a></h1>
+    <nav id="user-nav">
+      <ul>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+      </ul>
+    </nav>
+    <nav id="gnb">
+      <ul>
+        <li><a href="#">제품안내</a></li>
+        <li><a href="#">사업안내</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">맴버쉽</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="content">
+    <!-- 메인 비주얼 -->
+    <section class="main-visual">
+      <h1>main visual</h1>
+    </section>
+
+    <!-- 창업문의 -->
+    <section class="counsel-menu">
+      <ul>
+        <li class="counsel-title">
+          <h3>창업문의</h3>
+          <b>1566-3800</b>
+        </li>
+        <li>
+          <div><i class="far fa-clipboard"></i></div>
+          <h3>사업지원시스템</h3></li>
+        <li>
+          <div><i class="fas fa-search-location"></i></div>
+          <h3>가맹점찾기</h3></li>
+        <li>
+          <div><i class="fas fa-headset"></i></div>
+          <h3>지원문의</h3></li>
+      </ul>
+    </section>
+
+    <!-- 소개, 매장찾기(2칼럼) -->
+    <section class="about">
+      <div class="col2">
+        <img src="http://placeimg.com/600/300/b" alt="about">
+        <div>
+          <h2>로젠빈</h2>
+          <p>그녀의 매일을 건강하고 아름답게</p>
+          <a href="#">more</a>
+        </div>
+      </div>
+      <div class="col2">
+        <img src="http://placeimg.com/600/300/c" alt="매장찾기">
+        <div>
+          <h2>가맹점 찾기</h2>
+          <p>가까운 곳에 있는 가맹점을 찾아 보세요.</p>
+          <a href="#">more</a>
+        </div>        
+      </div>
+    </section>
+
+    <!-- why we need? 배너(풀 배경 이미지) -->
+    <section class="why">
+      <!-- [제목, 텍스트, more 버튼] -->
+      <h1>왜 우리인가?</h1>
+      <h2></h2>성공을 위한 창업주님들을 모십니다.</h2>
+      <p>설명 추가</p>
+      <a href="#">more</a>
+    </section>
+
+    <!-- 비전, 가운데 슬로건 박스포인트, 성공스토리 -->
+    <section class="vision">
+      <div class="col3">col1</div>
+      <div class="col3">col2</div>
+      <div class="col3">col3</div>
+    </section>
+
+    <!-- 뉴스 박스 1,2,3(목록이 아닌 카드UI로 구성) -->
+    <section class="news">
+      <div class="col3">new1</div>
+      <div class="col3">new2</div>
+      <div class="col3">new3</div>
+    </section>
+  </div><!-- end content -->
+
+  <footer id="main_footer">
+    <h1>footer</h1>
+    <a href="#">위로가기</a>
+  </footer>
+
+</body>
+</html>
