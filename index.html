@@ -7,6 +7,11 @@
   <title>flex layout-ex</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/bender/jquery-1.11.2.min.js"></script>
+  <!-- vegas bg slider -->
+  <link rel="stylesheet" href="js/bender/vegas/vegas.min.css">
+  <script src="js/bender/vegas/vegas.min.js"></script>
+  <script src='js/main.js'></script>
 </head>
 <body>
   <!--  
@@ -36,10 +41,6 @@
     <!-- 메인 비주얼 -->
     <section class="main-visual">
       <!-- <h1>main visual</h1> -->
-      <div class="slider">
-        <!-- 이미지 크기 2000 x 570 -->
-        <!-- <img src="images/main-visual1.jpg" alt="main visual" width="100%"> -->
-      </div>
     </section>
 
     <!-- 창업문의 -->
@@ -61,19 +62,20 @@
       </ul>
     </section>
 
-    <!-- 소개, 매장찾기(2칼럼) -->
+    <!-- 제품소개, 매장찾기(2칼럼) -->
     <section class="about">
       <div class="col2">
-        <img src="http://placeimg.com/600/300/b" alt="about">
+        <!-- 600x300 -->
+        <img src="images/product_ora600x300.jpg" alt="product">
         <div>
-          <h2>로젠빈</h2>
-          <p>대한민국 여성 전문 건강기능식품<br>
-            하루 한 송이 건강한 습관!</p>
+          <h2>오라니어 인덕션</h2>
+          <p>프리존 시스템으로 자유로운 4구 사용<br>
+            독일 EGO사의 최신 G5(5세대) 발열체</p>
           <a class="btn-more font-gray" href="#">more</a>
         </div>
       </div>
       <div class="col2">
-        <img src="http://placeimg.com/600/300/c" alt="매장찾기">
+        <img src="images/shop.jpg" alt="매장찾기">
         <div>
           <h2>가맹점 찾기</h2>
           <p>가까운 곳에 있는<br> 가맹점을 찾아 보세요.</p>
@@ -123,27 +125,20 @@
         </a>
       </div>
     </section>
-
-    <!-- 뉴스 박스 1,2,3(목록이 아닌 카드UI로 구성) -->
-    <!-- <section class="news">
-      <div class="col3">new1</div>
-      <div class="col3">new2</div>
-      <div class="col3">new3</div>
-    </section> -->
   </div><!-- end content -->
 
   <footer id="main_footer">
     <ul class="footer_menu">
-      <li>회사소개 |</li>
-      <li>이용약관 |</li>
-      <li><b>개인정보처리방침</b> |</li>
-      <li>온라인 소비자패널 | </li>
-      <li>공정거래 |</li>
+      <li>회사소개</li>
+      <li>이용약관</li>
+      <li><b>개인정보처리방침</b></li>
+      <li>온라인 소비자패널</li>
+      <li>공정거래</li>
       <li>CCM</li>
     </ul>
     <div class="inner_box">
       <p class="footer_logo">
-        <img src="images/f_logo2.png" alt="logo">
+        <img src="images/f_logo.png" alt="logo">
       </p>
       <ul class="address">
         <li>풀무원건강생활(주) 충청북도 증평군 도안면 원명로 35</li>
@@ -151,7 +146,7 @@
         <li>사업자등록번호 : 301-81-98406통신판매업신고 : 충북증평 00045호대표이사 : 오정우</li>
         <li class="copy">Copyright © Pulmuone Health&Living Co, Ltd. All Rights Reserved</li>
       </ul>
-      <a href="#">위로가기</a>
+      <a id="btn-top" href="#">TOP</a>
     </div>  
   </footer>
 
