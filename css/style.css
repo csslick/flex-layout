@@ -7,20 +7,30 @@
 body{
   font-size: 100%;
   color: #444;
+  font-family: "맑은 고딕", sans-serif;
 }
 a{
   text-decoration: none;
+  color: #ccc;
 }
 ul{
   list-style-type: none;
 }
-header, section, footer{
+
+/* 글자색상  */
+.font-white{ color: #fff; }
+.font-gray{ color: #444;}
+
+/* 기본 틀 레이아웃 */
+.container, header, section, footer{
+  position: relative;
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
 }
 #main_header{
   position: absolute;
+  z-index: 99;
   left: 50%;
   transform: translateX(-50%);
   width: 1200px;
@@ -34,6 +44,8 @@ header, section, footer{
   left: 30px;
   top: 25px;
 }
+
+/* 로그인 회원가입 메뉴 */
 #user-nav{
   position: absolute;
   top: 10px;
@@ -48,6 +60,7 @@ header, section, footer{
   font-size: 14px;
 }
 
+/* 메인 메뉴 */
 #gnb{
   position: absolute;
   right: 20px;
@@ -69,12 +82,34 @@ header, section, footer{
 
 #content .main-visual{
   width: auto;
-  height: 600px;
-  background: url('http://placeimg.com/1200/500/bg');
+  margin: 0 auto;
+  height: 570px;
+  /* border: 1px solid red; */
+  background: url('../images/main-visual1.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+.slider{
+  /* border: 1px solid red; */
+  margin: 0 auto;
+}
+#content .main-visual img{
+  display: block;
+  min-width: 1200px;
+
 }
 
 /* 창업문의 - 4칼럼 */
+#content .counsel-menu{
+  position: relative;
+  /* top: -40px; */
+  z-index: 9;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  /* border: 1px solid red; */
+
+}
 #content .counsel-menu ul{
   display: flex;
 }
@@ -110,9 +145,9 @@ header, section, footer{
   margin-top: 60px;
 }
 #content .about .col2{
-  /* flex: 1; */
-  width: calc(50% - 10px);
-  border: 1px solid red;
+  flex: 1;
+  /* width: calc(50% - 10px); */
+  /* border: 1px solid red; */
   overflow: hidden;
 }
 #content .about .col2:first-child{
@@ -127,19 +162,146 @@ header, section, footer{
 }
 #content .about .col2 > div{
   padding: 20px;
+  padding-bottom: 40px;
   background: #efefef;
 }
 #content .about .col2 > div > p{
   font-size: 1.4em;
   font-weight: bold;
+  margin-bottom: 2em;
 }
+.btn-more{
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+
 
 /* why 풀 배경 배너 섹션 */
 #content .why{
-  height: 600px;
+  position: relative;
+  width: auto;
+  height: 500px;
   background: #ccc;
   background: url('../images/why_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   margin-top: 60px;
+}
+#content .why .container{
+  height: 100%;
+  /* border: 1px solid red; */
+}
+#content .why .why_box{
+  position: absolute;
+  left: 0px; top: 0;
+  padding: 4em 20px;
+  background: rgba(0,0,0,0.8);
+  width: 400px;
+  height: 100%;
+}
+#content .why .why_box h1{
+  color: green;
+  margin-bottom: 1em;
+}
+#content .why .why_box h2{
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+}
+#content .why .why_box p{
+  color: #999999;
+  font-weight: bold;
+  margin-bottom: 4em;
+}
+
+/* 브랜드, 가운데 뉴스(포인트 배색), 상품배너 */
+#content .news{
+  display: flex;
+  margin-top: 60px;
+}
+#content .news .col3{
+  flex: 1;
+  /* border: 1px solid red; */
+  padding: 20px;
+  padding-top: 2.4em;
+  margin-right: 20px;
+}
+#content .news .col3:last-child{
+  margin-right: 0;
+}
+#content .news .col3:first-child{
+  text-align: center;
+  /* border: 1px solid red; */
+  background: url('../images/nature-green.jpeg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#content .news .col3:first-child h2{
+  font-size: 2.4em;
+  font-family: serif;
+  margin-bottom: 16px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+#content .news .col3:first-child p{
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+#content .news .col3:nth-child(2){
+  background: #005116;
+  color: white;
+}
+#content .news .col3:nth-child(2) h2,
+#content .news .col3:nth-child(2) p{
+  margin-bottom: 1em;
+}
+#content .news .col3:nth-child(3){
+  padding: 0;
+  background: #005116;
+  color: white;
+}
+#content .news .col3:nth-child(3) img{
+  display: block;
+}
+
+/* footer */
+#main_footer{
+  width: auto;
+  background: #3a3e3f;
+  height: 200px;
+  margin-top: 60px;
+  color: #999;
+  font-size: small;
+}
+#main_footer .footer_menu{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-weight: normal;
+  border-bottom: 1px solid #666;
+}
+#main_footer .footer_menu li{
+  display: inline-block;
+}
+#main_footer .address li{
+  line-height: 1.6em;
+}
+#main_footer .inner_box{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+#main_footer .inner_box img{
+  margin-right: 3em;
 }
